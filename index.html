@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Up</title>
+    <link rel="mystyle" href="mystyle.css" > </link>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+    <style>
+     body{
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid gray;
+        width: 300px;
+        margin: 50px 100px;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+    .container >input{
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        width: 95%;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .icons>i{
+        margin: 0 25px;
+        font-size: 100%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .stepper{
+        border: 1px solid rgb(13, 150, 196);
+        height: 4px ;
+        width: 98%;
+        background-color: rgb(82, 82, 227);
+        position: absolute;
+        top: 21%;
+        z-index: -1;
+        width: 300px;
+    }
+    .container>button{
+        border: none;
+        padding: 10px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: rgb(51, 26, 213);
+        font-weight: bold;
+    }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Sigh Up</h1>
+        <div class="stepper"></div>
+        <div class="icons"><i class="fa-solid fa-user"></i><i class="fa-solid fa-envelope"></i><i class="fa-solid fa-key"></i><i class="fa-solid fa-trophy"></i></div>
+        <input type="text"  placeholder="User Name"/><input type="text" placeholder="First Name"/><input type="text"  placeholder="last Name"/>
+        <button>Next</button>
+        <a href="next.html"></a>
+    </div>
+  </body>
+</html>
